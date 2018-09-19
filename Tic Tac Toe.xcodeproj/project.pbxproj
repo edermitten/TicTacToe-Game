@@ -12,6 +12,9 @@
 		D5AC1E922152A10200F75101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5AC1E902152A10200F75101 /* Main.storyboard */; };
 		D5AC1E942152A10600F75101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5AC1E932152A10600F75101 /* Assets.xcassets */; };
 		D5AC1E972152A10600F75101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5AC1E952152A10600F75101 /* LaunchScreen.storyboard */; };
+		D5AC1E9F2152A12B00F75101 /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = D5AC1E9E2152A12B00F75101 /* board.png */; };
+		D5AC1EA22152A15400F75101 /* nought.png in Resources */ = {isa = PBXBuildFile; fileRef = D5AC1EA02152A15400F75101 /* nought.png */; };
+		D5AC1EA32152A15400F75101 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = D5AC1EA12152A15400F75101 /* cross.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		D5AC1E932152A10600F75101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5AC1E962152A10600F75101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5AC1E982152A10600F75101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5AC1E9E2152A12B00F75101 /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
+		D5AC1EA02152A15400F75101 /* nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nought.png; sourceTree = "<group>"; };
+		D5AC1EA12152A15400F75101 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				D5AC1E932152A10600F75101 /* Assets.xcassets */,
 				D5AC1E952152A10600F75101 /* LaunchScreen.storyboard */,
 				D5AC1E982152A10600F75101 /* Info.plist */,
+				D5AC1EA12152A15400F75101 /* cross.png */,
+				D5AC1EA02152A15400F75101 /* nought.png */,
+				D5AC1E9E2152A12B00F75101 /* board.png */,
 			);
 			path = "Tic Tac Toe";
 			sourceTree = "<group>";
@@ -122,6 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AC1EA32152A15400F75101 /* cross.png in Resources */,
+				D5AC1E9F2152A12B00F75101 /* board.png in Resources */,
+				D5AC1EA22152A15400F75101 /* nought.png in Resources */,
 				D5AC1E972152A10600F75101 /* LaunchScreen.storyboard in Resources */,
 				D5AC1E942152A10600F75101 /* Assets.xcassets in Resources */,
 				D5AC1E922152A10200F75101 /* Main.storyboard in Resources */,
@@ -283,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Tic Tac Toe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Tic Tac Toe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
