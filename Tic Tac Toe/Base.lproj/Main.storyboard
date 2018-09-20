@@ -123,6 +123,26 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mUt-AU-63X"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noughts has won!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqi-tX-FZb">
+                                <rect key="frame" x="69.5" y="315.5" width="236" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="KLx-V2-erV"/>
+                                    <constraint firstAttribute="height" constant="36" id="jpK-Kv-dBK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                <color key="textColor" red="0.96930998563766479" green="0.075974118914407598" blue="0.18869766879040675" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WL6-g9-bUy">
+                                <rect key="frame" x="152" y="401" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play again">
+                                    <color key="titleColor" red="0.96930998560000003" green="0.075974118909999999" blue="0.1886976688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6mq-zl-Xgn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -134,11 +154,13 @@
                             <constraint firstItem="OJn-Ym-K24" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kag-QI-OlL"/>
                             <constraint firstItem="Uza-mZ-Hj6" firstAttribute="leading" secondItem="unM-RX-lLd" secondAttribute="trailing" constant="37.5" id="LoH-1E-D0Y"/>
                             <constraint firstItem="RNX-GH-ZuL" firstAttribute="leading" secondItem="OJn-Ym-K24" secondAttribute="trailing" constant="37.5" id="NdO-IN-d91"/>
+                            <constraint firstItem="Qqi-tX-FZb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oqc-6d-Hbv"/>
                             <constraint firstItem="unM-RX-lLd" firstAttribute="top" secondItem="OJn-Ym-K24" secondAttribute="bottom" constant="41.5" id="QFZ-ny-zvJ"/>
                             <constraint firstItem="THK-PR-BPW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vyt-hY-px4"/>
                             <constraint firstItem="PsO-XJ-v8g" firstAttribute="leading" secondItem="cQE-gI-O93" secondAttribute="trailing" constant="37.5" id="X6y-gi-bZK"/>
                             <constraint firstItem="RNX-GH-ZuL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZL1-dd-lRd"/>
                             <constraint firstItem="cQE-gI-O93" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b4v-Nl-T4g"/>
+                            <constraint firstItem="Qqi-tX-FZb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cuB-tr-ZmT"/>
                             <constraint firstItem="yfl-9d-gkl" firstAttribute="leading" secondItem="RNX-GH-ZuL" secondAttribute="trailing" constant="37.5" id="dQg-kZ-Dna"/>
                             <constraint firstItem="RNX-GH-ZuL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="erP-Xz-erx"/>
                             <constraint firstItem="yfl-9d-gkl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ikh-RV-oPi"/>
@@ -152,6 +174,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="playAgainButton" destination="WL6-g9-bUy" id="5J0-JI-i2V"/>
+                        <outlet property="winnerLabel" destination="Qqi-tX-FZb" id="68L-Ut-8Hm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
